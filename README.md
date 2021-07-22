@@ -1,14 +1,25 @@
-# Salesforce DX Project: Next Steps
+# Event Communication Examples
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Installation
 
-## How Do You Plan to Deploy Your Changes?
+### Githubsfdeploy
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+To install in your org (recommended is developer edition) you can click on the bellow button or deploy by SFDX.
 
-## Configure Your Salesforce DX Project
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+<a href="https://githubsfdeploy.herokuapp.com?owner=willianmatheus98&repo=aura-lwc-communication-recipes">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
+
+## SFDX
+
+Do the git clone and in the folder that was cloned, execute the follow sfdx command 
+
+```bash
+sfdx force:source:deploy -p force-app/main/default
+```
 
 ## Read All About It
 
