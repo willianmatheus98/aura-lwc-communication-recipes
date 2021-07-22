@@ -7,7 +7,7 @@
 To install in your org (recommended is developer edition) you can click on the bellow button or deploy by SFDX.
 
 
-<a href="https://githubsfdeploy.herokuapp.com?owner=willianmatheus98&repo=aura-lwc-communication-recipes">
+<a href="https://githubsfdeploy.herokuapp.com?owner=willianmatheus98&repo=aura-lwc-communication-recipes&ref=main">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
