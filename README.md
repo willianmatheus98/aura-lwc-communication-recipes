@@ -21,6 +21,13 @@ Do the git clone and in the folder that was cloned, execute the follow sfdx comm
 sfdx force:source:deploy -p force-app/main/default
 ```
 
+# Enable the tabs
+
+Assign the following permission set to your user or profile
+
+```
+Event_communication_tabs
+```
 ## Read All About It
 
 - [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Event communication tabs</label>
+    <tabSettings>
+        <tab>Event_Communicaiton_LWC</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Event_Communication_Aura</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>
