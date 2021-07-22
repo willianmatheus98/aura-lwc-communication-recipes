@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Change the color of the traffic light">
+    <aura:attribute name="newColor" type="String"/>    
+</aura:event>

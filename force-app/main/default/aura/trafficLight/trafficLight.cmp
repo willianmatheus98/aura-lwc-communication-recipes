@@ -1,0 +1,4 @@
+<aura:component>
+    <aura:attribute name="light" type="String" />
+    <img src="{!$Resource.trafficLight + '/traffic-light/' + v.light + '.png'}" width="180"></img>
+</aura:component>

@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="options" type="List" default="[
+    {'label': 'Red', 'value': 'red'},
+    {'label': 'Yellow', 'value': 'yellow'},
+    {'label': 'Green', 'value': 'green'},
+    ]" />
+
+    <aura:attribute name="scopeEvent" type="String" default="application"/>
+
+    <aura:registerEvent name="myEventChangeColor" type="c:trafficLightChangeColor"/>
+    <aura:registerEvent name="myEventChangeColorApplication" type="c:trafficLightChangeColorApplication"/>
+
+    <lightning:combobox name="colorPicklist" label="Color light" value="red" placeholder="Select a color"
+        options="{! v.options }" onchange="{! c.handleChange }" />
+
+</aura:component>

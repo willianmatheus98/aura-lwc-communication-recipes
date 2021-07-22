@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="lightParent" type="String" default="red" />
+    
+    <aura:handler name="myEventChangeColor" event="c:trafficLightChangeColor" action="{!c.handleColorChange}"/>
+    <aura:handler event="c:trafficLightChangeColorApplication" action="{!c.handleColorChange}"/>
+
+
+    <lightning:card title="Traffic light container">
+        <div class="slds-m-around_x-small">
+            <c:trafficLight light="{!v.lightParent}" />
+            <c:trafficLightSwitcher scopeEvent="component" />
+        </div>
+    </lightning:card>
+</aura:component>

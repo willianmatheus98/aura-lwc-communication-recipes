@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="priorCount" type="Integer" default="0" />
+    <aura:attribute name="counter" type="Integer" default="0" />
+
+    <lightning:messageChannel type="Count_Updated__c"
+                              onMessage="{!c.handleMessage}"/>
+
+    <lightning:card title="Counts Aura" iconName="action:change_record_type">
+        <p class="slds-text-align_center slds-var-m-vertical_medium">
+            Prior Count: <lightning:formattedNumber value="{!v.priorCount}"></lightning:formattedNumber>
+        </p>
+        <p class="slds-text-align_center slds-var-m-vertical_medium">
+            Count: <lightning:formattedNumber value="{!v.counter}"></lightning:formattedNumber>
+        </p>
+    </lightning:card>
+</aura:component>
